@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FastestDelivery</string>
+
+    <string name="global_ok">Ok</string>
+    <string name="global_unknown_error">Unknown error</string>
+
+    <!--     Splash-->
+    <string name="fragment_splash_button_continue_text">Get Started</string>
+    <string name="fragment_splash_title_text">The Fastest In Delivery <font color="red">Products</font></string>
+
+    <!--    Auth-->
+    <string name="fragment_auth_tab_login_text">Login</string>
+    <string name="fragment_auth_tab_register_text">Register</string>
+
+    <!--    Login-->
+    <string name="fragment_login_button_continue_text">Login</string>
+    <string name="fragment_login_email_input_title">Email</string>
+    <string name="fragment_login_email_input_hint">Enter your email</string>
+    <string name="fragment_login_password_input_title">Password</string>
+    <string name="fragment_login_password_input_hint">Enter your password</string>
+
+    <!--    Register-->
+    <string name="fragment_register_name_input_title">Name</string>
+    <string name="fragment_register_name_input_hint">Enter your name</string>
+    <string name="fragment_register_button_continue_text">Register</string>
+
+    <!--    Main-->
+    <string name="menu_item_home_title">Home</string>
+    <string name="menu_item_bag_title">Bag</string>
+    <string name="menu_item_profile_title">Profile</string>
+
+    <!--    Bag-->
+    <string name="bag_products_recycler_placeholder_text">Your shopping cart is empty</string>
+    <string name="bag_buy_button_text">Buy</string>
+    <string name="bag_total_amount">Total amount: %s₽</string>
+    <string name="bag_item_product_price">Price: %s₽</string>
+
+    <!--    Profile-->
+    <string name="profile_log_out_button_text">Log out</string>
+
+    <!--    Success Payment-->
+    <string name="payment_success_button_text">Continue shopping</string>
+    <string name="payment_success_text">Order Sucesfulled</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_card_image_container"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_card_image"
+                android:layout_width="107dp"
+                android:layout_height="129dp"
+                android:layout_gravity="center"
+                tools:src="@sample/drawable" />
+
+            <TextView
+                android:id="@+id/product_card_name"
+                style="@style/AppTheme.Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/item_bag_product_price"
+                app:layout_constraintStart_toStartOf="@id/item_bag_product_minus_plus_container"
+                tools:text="Банан" />
+
+            <TextView
+                android:id="@+id/product_card_weight"
+                style="@style/AppTheme.Text.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:paddingStart="8dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/item_bag_product_minus_plus_container"
+                app:layout_constraintStart_toStartOf="@id/item_bag_product_minus_plus_container"
+                tools:text="200 гр." />
+
+            <LinearLayout
+                android:id="@+id/product_price_plus_container"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10px"
+                android:textAlignment="inherit"
+                android:textDirection="inherit"
+                app:layout_constraintBottom_toBottomOf="@+id/item_bag_product_image_container"
+                app:layout_constraintStart_toEndOf="@+id/item_bag_product_image_container">
+
+                <TextView
+                    android:id="@+id/product_card_price"
+                    style="@style/AppTheme.Text.Body"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:textAlignment="inherit"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/item_bag_product_minus_plus_container"
+                    app:layout_constraintStart_toStartOf="@id/item_bag_product_minus_plus_container"
+                    tools:text="100₽" />
+
+                <ImageView
+                    android:id="@+id/product_card_plus"
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/icon_product_plus" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

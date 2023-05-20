@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="global_ok">Ок</string>
+    <string name="global_unknown_error">Неизвестная ошибка</string>
+
+    <!--     Splash-->
+    <string name="fragment_splash_button_continue_text">Продолжить</string>
+    <string name="fragment_splash_title_text">Самая быстрая доставка <font color="red">продуктов</font></string>
+
+    <!--    Auth-->
+    <string name="fragment_auth_tab_login_text">Войти</string>
+    <string name="fragment_auth_tab_register_text">Регистрация</string>
+
+    <!--    Login-->
+    <string name="fragment_login_button_continue_text">Войти</string>
+    <string name="fragment_login_email_input_title">Почта</string>
+    <string name="fragment_login_email_input_hint">Введите почту</string>
+    <string name="fragment_login_password_input_title">Пароль</string>
+    <string name="fragment_login_password_input_hint">Введите пароль</string>
+
+    <!--    Register-->
+    <string name="fragment_register_name_input_title">Имя</string>
+    <string name="fragment_register_name_input_hint">Введите имя</string>
+    <string name="fragment_register_button_continue_text">Зарегистрироваться</string>
+
+
+    <!--    Main-->
+    <string name="menu_item_home_title">Главная</string>
+    <string name="menu_item_bag_title">Корзина</string>
+    <string name="menu_item_profile_title">Профиль</string>
+
+    <!--    Bag-->
+    <string name="bag_products_recycler_placeholder_text">Ваша корзина пуста</string>
+    <string name="bag_buy_button_text">Оплатить</string>
+    <string name="bag_total_amount">Общая стоимость:  %s₽</string>
+    <string name="bag_item_product_price">Цена: %s₽</string>
+
+    <!--    Profile-->
+    <string name="profile_log_out_button_text">Выйти</string>
+
+    <!--    Success Payment-->
+    <string name="payment_success_button_text">Продолжить покупки</string>
+    <string name="payment_success_text">Заказ оформлен</string>
+
+</resources>

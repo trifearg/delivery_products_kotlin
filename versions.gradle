@@ -1,0 +1,7 @@
+ext.versions = [
+        daggerVersion  : '2.42',
+        roomVersion    : '2.4.2',
+        retrofitVersion: '2.9.0',
+        moshiVersion   : '1.14.0',
+        room_version   : '2.5.1',
+]

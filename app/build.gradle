@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+}
+
+android {
+    namespace 'ru.app.fastestdelivery'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "ru.app.fastestdelivery"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+
+    // androidx
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation "androidx.fragment:fragment-ktx:1.5.7"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // ViewBinding
+    implementation 'com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.9'
+
+    //Cicerone Navigation
+    implementation("com.github.terrakok:cicerone:7.1")
+
+    // Hilt DI
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$versions.retrofitVersion"
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
+    //Moshi
+    implementation "com.squareup.moshi:moshi-adapters:$versions.moshiVersion"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$versions.moshiVersion"
+    implementation("com.squareup.moshi:moshi-kotlin:$versions.moshiVersion")
+
+    // Glide imageLoading
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+    // Room Database
+    implementation("androidx.room:room-runtime:$versions.room_version")
+    annotationProcessor("androidx.room:room-compiler:$versions.room_version")
+    kapt("androidx.room:room-compiler:$versions.room_version")
+    implementation("androidx.room:room-ktx:$versions.room_version")
+
+
+    // Location
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
+}
